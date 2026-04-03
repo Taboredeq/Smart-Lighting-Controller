@@ -6,14 +6,22 @@ This project focuses on embedded system design, sensor integration, and power co
 ---
 
 ## 📸 Project Overview
+
+Controller
 <p align="center">
   <img src="./images/controller.jpg" width="400"/>
   <img src="images/controller_on_power_supply.jpg" width="400"/>
+</p>
+Sensors
+<p align="center">
   <img src="./images/sensor_wall.jpg" width="400"/>
   <img src="images/sensor_image.jpg" width="400"/>
+</p>  
+Presentation
+<p align="center">
   <img src="images/rl_example.gif" width="400"/>
-  
 </p>
+
 
 ---
 
@@ -49,6 +57,13 @@ This project focuses on embedded system design, sensor integration, and power co
 ![Case](./images/case.png)
 
 ---
+## Python visualisation
+Visualisation of possible color space of red and green leds, fade-in and fade-out time and behavior, using python pygame library.
+Each white marker represents 100ms of time passed
+
+<p align="center">
+  <img src="images/test-image.png" width="1000"/>
+</p>
 
 ## 🚀 How It Works
 
