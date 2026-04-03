@@ -51,10 +51,27 @@ Presentation
 <p align="center">
   <img src="./images/schematic.png" width="500"/>
 </p>
+Note:
+
+R2 Resistor determines the input voltage sensitivity. R2 and R1 (photoresistor) are connected in voltage devider configuration such that voltage measured on analog A7 pin can be calculated using this formula:
+
+$$
+U_{A7} = 5V \cdot \frac{R_2}{R_1 + R_2}
+$$
+
+With considering that formula and measuring the average R1 resistance in day and night, i have choosen the R2 resistor to have the 10k Ohm resistance.  
 
 ### 3D Enclosure
 
-![Case](./images/case.png)
+Controller stand model
+<p align="center">
+  <img src="images/controller_model.png" width="500"/>
+</p>
+
+Snesors case model
+<p align="center">
+  <img src="images/sensor_model.png" width="500"/>
+</p>
 
 ---
 ## Python visualisation
@@ -68,7 +85,7 @@ Each white marker represents 100ms of time passed
 ## 🚀 How It Works
 
 - PIR sensor detects motion; photoresistor checks ambient light  
-- LEDs turn ON only if motion is detected **and** it’s dark  
+- LEDs turn ON only if motion is detected and it’s dark  
 - Smooth fade-in/out via PWM, maintaining red/green ratio  
 - LEDs turn OFF if no motion or environment becomes bright
 
@@ -76,7 +93,7 @@ Each white marker represents 100ms of time passed
 
 ## 🎯 Why I built this
 
-The need for night lighting that helps you see what's in the room without having to turn on bright lights.
+The need for night warm lighting that helps you see what's in the room without having to turn on bright lights.
 
 ## 👤 Author
 Norbert 
